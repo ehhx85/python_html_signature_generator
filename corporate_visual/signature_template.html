@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<!-- Header ------------------------------------------------------------------>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <title>
+  ${employee_name} - ${company_name}
+ </title>
+ <style type="text/css">
+  table {
+   font-size: 8pt;
+   color: #4D4D4D;
+   font-family: "Verdana", Geneva, sans-serif;
+   font-style: normal;
+   padding-top: 1px;
+   padding-bottom: 1px;
+  }
+  tr.logo{
+   padding-top: 4px;
+   padding-bottom: 4px;
+  }
+  tr.notice{
+   font-size: 6pt;
+  }
+  table.phone td{
+   padding-right: 5px;
+  }
+  table.social_media td{
+   padding-right: 4px;
+  }
+  span.name{
+   font-size: 10pt;
+   color: #000000;
+   font-weight: bold;
+  }
+  span.title{
+   font-size: 10pt;
+   color: #00BFFF;
+   font-style: italic;
+   font-variant: small-caps;
+  }
+ </style>
+</head>
+<!---------------------------------------------------------------------------->
+<body>
+ <table>
+  <tbody>
+<!-- Employee Name and Title ------------------------------------------------->
+   <tr>
+    <td>
+     <span class="name">
+       ${employee_name}
+     </span>
+     <span>
+      ${employee_separator}
+     </span>
+     <span class="title">
+       ${employee_position}
+     </span>
+    </td>
+   </tr>
+<!-- Company Logo ------------------------------------------------------------>
+   <tr class="logo">
+    <td>
+     <a href="${link_site_0}">
+      <img src="${link_icon_0}" nosend="1" border="0" width="200" height="37" alt="${company_initials} Logo" title="${company_name}">
+     </a>
+    </td>
+   </tr>
+<!-- Address ----------------------------------------------------------------->
+   <tr>
+    <td>
+      ${address_line_1}
+      <br>
+      ${address_line_2}
+    </td>
+   </tr>
+<!-- Phone ------------------------------------------------------------------->
+   <tr>
+    <td>
+     <table class="phone">
+      <tr>
+       <td>
+        <img src="${phone_icon_office}" nosend="1" border="0" width="${contact_icon_size}" height="${contact_icon_size}" alt="P:" title="Office Number">
+       </td>
+       <td>
+        ${phone_number_office}
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img src="${phone_icon_fax}" nosend="1" border="0" width="${contact_icon_size}" height="${contact_icon_size}" alt="F:" title="Fax Number">
+       </td>
+       <td>
+        ${phone_number_fax}
+       </td>
+      </tr>
+      <tr class="optional_phone">
+       <td>
+        <img src="${phone_icon_mobile}" nosend="1" border="0" width="${contact_icon_size}" height="${contact_icon_size}" alt="C:" title="Mobile Number">
+       </td>
+       <td>
+        ${phone_number_mobile}
+       </td>
+      </tr>
+     </table>
+    </td>
+   </tr>
+<!-- Social Media Links ------------------------------------------------------>
+   <tr>
+    <td>
+     <table class="social_media">
+      <tr>
+       <td>
+        <a href="${link_site_1}">
+         <img src="${link_icon_1}" nosend="1" border="0" width="${link_icon_size}" height="${link_icon_size}" alt="${link_name_1}" title="${link_over_1}">
+        </a>
+       </td>
+       <td>
+        <a href="${link_site_2}">
+         <img src="${link_icon_2}" nosend="1" border="0" width="${link_icon_size}" height="${link_icon_size}" alt="${link_name_2}" title="${link_over_2}">
+        </a>
+       </td>
+       <td>
+        <a href="${link_site_3}">
+         <img src="${link_icon_3}" nosend="1" border="0" width="${link_icon_size}" height="${link_icon_size}" alt="${link_name_3}" title="${link_over_3}">
+        </a>
+       </td>
+       <td>
+        <a href="${link_site_4}">
+         <img src="${link_icon_4}" nosend="1" border="0" width="${link_icon_size}" height="${link_icon_size}" alt="${link_name_4}" title="${link_over_4}">
+        </a>
+       </td>
+       <td>
+        <a href="${link_site_5}">
+         <img src="${link_icon_5}" nosend="1" border="0" width="${link_icon_size}" height="${link_icon_size}" alt="${link_name_5}" title="${link_over_5}">
+        </a>
+       </td>
+      </tr>
+     </table>
+    </td>
+   </tr>
+<!-- Footer ------------------------------------------------------------------>
+   <tr class="notice">
+    <td>
+     <b>
+      Confidentiality Notice:
+     </b>
+     ${conf_notice}
+    </td>
+   </tr>
+<!---------------------------------------------------------------------------->
+  </tbody>
+ </table>
+</body>
+<!---------------------------------------------------------------------------->
+</html>
+<!---------------------------------------------------------------------------->
